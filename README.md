@@ -1,4 +1,4 @@
-<img src=stp_icon.png width=200>
+<img src=stp_icon.png width=160>
 
 ## stp_prio
 
