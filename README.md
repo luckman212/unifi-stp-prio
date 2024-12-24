@@ -53,3 +53,7 @@ export UNIFI_PASS=supersecret123
 ### Can this program do _xyz_ ?
 
 I wrote this to scratch my own itch. I've tested it fairly extensively on my own setup, but YMMV. I am running UNA version 9.0.106 as of this writing. Bugreports or PRs to add features welcome!
+
+### See Also
+
+- [luckman212/unifi-usp-control](https://github.com/luckman212/unifi-usp-control) - Control or retrieve status of a USP-Plug device
