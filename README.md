@@ -2,7 +2,7 @@
 
 ## stp_prio
 
-Python wrapper around the Unifi API to retrieve (R)STP priority and other info of the USW switches for a site.
+Python wrapper around the Unifi API to retrieve STP/RSTP priority (and other info such as MAC, model, IP, firmware version) of the USW switches at a site.
 
 ### Setup and Usage
 
@@ -12,14 +12,14 @@ Edit the script to adjust the variables at the top such as site id, Unifi contro
 
 Run with `-h` or `--help` for help on the commandline arguments.
 
+### Sample Output
+
 ```
-$ ./stp_prio.py -h
-usage: stp_prio.py [--site SITE]
-
-Show Unifi switch STP priority
-
-options:
-  --site, -s SITE  Site ID (as shown in Unifi web interface)
+device name    prio   type  model    MAC                IP             fw version
+─────────────────────────────────────────────────────────────────────────────────────
+sw01 - closet  4096   rstp  USPM16P  0c:ea:14:31:af:a2  192.168.20.11  7.1.26.15869
+sw02 - desk    8192   rstp  USM25G5  94:2a:6f:7e:4c:66  192.168.20.12  2.1.4.955
+sw03 - desk    12288  rstp  USL8LPB  f4:e2:c6:53:1e:f6  192.168.20.13  7.1.26.15869
 ```
 
 ### List of Environment Variables
