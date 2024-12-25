@@ -86,7 +86,7 @@ if __name__ == '__main__':
         exit(1)
     switches = [dev for dev in res.json().get('data') if dev.get('type') == 'usw']
     keys = ['name', 'stp_priority', 'stp_version', 'shortname', 'mac', 'ip', 'version']
-    headers = ['device name', 'prio', 'type', 'model', 'MAC', 'IP', 'fw version']
+    headers = ['device_name', 'prio', 'type', 'model', 'MAC', 'IP', 'fw_version']
     rows = [headers]
     for s in sorted(switches, key=lambda x: int(x['stp_priority']), reverse=False):
         rows.append(get_values(s, keys))
